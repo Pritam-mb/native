@@ -1,4 +1,5 @@
-import { View, Text, ScrollView, StyleSheet, useColorScheme } from 'react-native';
+import { View, Text, StyleSheet, useColorScheme } from 'react-native';
+import { ScrollView } from 'react-native';
 import React from 'react';
 
 const Elevetdcards = () => {
@@ -23,12 +24,11 @@ const Elevetdcards = () => {
         showsHorizontalScrollIndicator={true}
         nestedScrollEnabled={true}
         contentContainerStyle={{ paddingLeft: 16, paddingRight: 16 }}
-        // style={[styles.elevet]}
       >
         {cards.map((card, index) => (
           <View 
             key={index} 
-            style={[styles.card, { backgroundColor: card.color },styles.elevet]}
+            style={[styles.card, { backgroundColor: card.color }]}
           >
             <Text style={styles.cardText}>{card.text}</Text>
           </View>
@@ -41,14 +41,6 @@ const Elevetdcards = () => {
 const styles = StyleSheet.create({
   container: {
     marginTop: 10,
-  },
-  elevet: {
-    elevation: 5,
-    marginVertical: 10,
-    shadowColor: '#af21cfff',
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
   },
   heading: {
     fontSize: 24,

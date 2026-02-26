@@ -18,14 +18,14 @@ const Flatcard = ({ color }: FlatcardProps) => {
 export default Flatcard;
 const styles = StyleSheet.create({
   box:{
-    width:70,
-    height:20,
+    width: 100,
+    height: 100,
     justifyContent:'center',
     alignItems:'center',
     marginTop:10,
     borderRadius:10,
     marginLeft:10,
-    elevation:8,
+    elevation:4,
   },
   font:{
     fontSize:16,
