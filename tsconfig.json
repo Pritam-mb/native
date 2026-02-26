@@ -1,0 +1,13 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["es2017"],
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"]
+}
